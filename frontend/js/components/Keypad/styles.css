@@ -1,0 +1,7 @@
+.t9-app .keypad {
+    flex:1 1;
+}
+.t9-app .buttons {
+    display: flex;
+    width: 250px;
+}
