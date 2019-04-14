@@ -41,6 +41,7 @@ class Trie {
                 node = node.children[key];
                 hasMatches = true;
             } else {
+                hasMatches = false;
                 break;
             }
         }
