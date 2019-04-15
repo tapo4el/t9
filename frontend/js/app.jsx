@@ -5,7 +5,7 @@ import './style.css'
 
 import Keypad from './components/Keypad';
 import Input from './components/Input';
-import T9List from './components/T9List';
+import Suggestions from './components/Suggestions';
 
 class App extends React.Component {
     render() {
@@ -13,7 +13,7 @@ class App extends React.Component {
             <div className="t9-app">
                 <Input/>
                 <div className="row">
-                    <T9List/>
+                    <Suggestions/>
                     <Keypad/>
                 </div>
             </div>
