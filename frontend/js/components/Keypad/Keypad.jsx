@@ -10,21 +10,20 @@ class Keypad extends React.PureComponent {
             <div className="keypad">
                 <div className="buttons">
                     <Button value={1}/>
-                    <Button onClickHandler={addSymbol} value={2} text={'d,e,f'}/>
-                    <Button onClickHandler={addSymbol} value={3} text={'g,h,i'}/>
+                    <Button onClickHandler={addSymbol} value={2} text={'abc'}/>
+                    <Button onClickHandler={addSymbol} value={3} text={'def'}/>
                 </div>
                 <div className="buttons">
-                    <Button onClickHandler={addSymbol} value={4} text={'a,b,c'}/>
-                    <Button onClickHandler={addSymbol} value={5} text={'d,e,f'}/>
-                    <Button onClickHandler={addSymbol} value={6} text={'g,h,i'}/>
+                    <Button onClickHandler={addSymbol} value={4} text={'ghi'}/>
+                    <Button onClickHandler={addSymbol} value={5} text={'jkl'}/>
+                    <Button onClickHandler={addSymbol} value={6} text={'mno'}/>
                 </div>
                 <div className="buttons">
-                    <Button onClickHandler={addSymbol} value={7} text={'a,b,c'}/>
-                    <Button onClickHandler={addSymbol} value={8} text={'d,e,f'}/>
-                    <Button onClickHandler={addSymbol} value={9} text={'g,h,i'}/>
+                    <Button onClickHandler={addSymbol} value={7} text={'pqrs'}/>
+                    <Button onClickHandler={addSymbol} value={8} text={'tuv'}/>
+                    <Button onClickHandler={addSymbol} value={9} text={'wxyz'}/>
                 </div>
                 <div className="buttons">
-                    <Button onClickHandler={addSymbol} value={0} text={'space'}/>
                     <Button onClickHandler={removeSymbol} value={'Remove'}/>
                 </div>
             </div>
