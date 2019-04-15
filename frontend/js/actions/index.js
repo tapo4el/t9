@@ -1,4 +1,7 @@
 import { createAction } from 'redux-actions';
 
-export const addNumber = createAction('ADD_NUMBER');
-export const removeNumber = createAction('REMOVE_NUMBER');
+export const addSymbol = createAction('ADD_SYMBOL');
+
+export const removeSymbol = createAction('REMOVE_SYMBOL');
+
+export const addWord = createAction('ADD_WORD');

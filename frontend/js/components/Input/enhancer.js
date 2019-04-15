@@ -1,13 +1,9 @@
 import { connect } from 'react-redux';
 
-// const mapStateToProps = state => ({
-//     text: state.predictionMask,
-// });
-const mapStateToProps = state => {
-    console.log(state);
-    return {
-        text: state.predictionMask.join(''),
-    }
-};
+import { getInputText} from '../../selectors';
+
+const mapStateToProps = state => ({
+    inputText: getInputText(state),
+});
 
 export default connect(mapStateToProps, null);

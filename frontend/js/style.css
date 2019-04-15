@@ -7,4 +7,5 @@ body {
 .t9-app .row {
   display: flex;
   width: 550px;
+  margin-top: 10px;
 }

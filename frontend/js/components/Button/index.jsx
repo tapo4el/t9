@@ -3,9 +3,9 @@ import './styles.css';
 
 class Button extends React.PureComponent {
     render () {
-        const { text, value, addNumber } = this.props;
+        const { text, value, onClickHandler } = this.props;
         return (
-            <button className="button" onClick={() => addNumber(value)}>
+            <button className="button" onClick={() => onClickHandler(value)}>
                 {value}
                 <div>{text}</div>
             </button>

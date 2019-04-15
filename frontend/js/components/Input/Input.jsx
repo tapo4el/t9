@@ -3,11 +3,11 @@ import './styles.css';
 
 class Input extends React.PureComponent {
    render() {
-       const { text } = this.props;
+       const { inputText } = this.props;
        return (
-           <input type="text" className="textInput" value={text} readOnly/>
-       )
+           <input type="text" className="textInput" value={inputText} readOnly/>
+       );
    }
-}
+};
 
 export default Input;
