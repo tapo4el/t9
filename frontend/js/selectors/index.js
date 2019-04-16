@@ -21,4 +21,4 @@ export const getInputText = createSelector(
 export const getSuggestions = createSelector(
     appState,
     ({ suggestions }) => suggestions
-)
+);

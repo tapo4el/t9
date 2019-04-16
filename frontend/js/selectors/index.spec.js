@@ -1,4 +1,4 @@
-import { getInputText, getMaskNumbers, getSuggestions} from './index';
+import { getInputText, getMaskNumbers, getSuggestions } from './index';
 
 describe('Selectors', () => {
     const state = {
@@ -10,9 +10,11 @@ describe('Selectors', () => {
     it ('getMaskNumbers should work correctly', () => {
         expect(getMaskNumbers(state)).toEqual('23');
     });
+
     it ('getInputText should work correctly', () => {
         expect(getInputText(state)).toEqual('This is ad');
     });
+
     it ('getSuggestions should work correctly', () => {
         expect(getSuggestions(state)).toEqual(['test']);
     });
