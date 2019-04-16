@@ -21,3 +21,4 @@ yarn start:dev
 - Allow iterate over possible characters
 - Allow delete entered words
 - Add "0" button to allow add space in text
+- Take a look at bundle.js size

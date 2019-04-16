@@ -63,4 +63,4 @@ class Trie {
     }
 }
 
-module.exports = new Trie();
+module.exports = Trie;

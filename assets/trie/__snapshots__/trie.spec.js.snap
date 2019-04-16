@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Trie insert work correctly and to be case insensitive 1`] = `
+Trie {
+  "root": Node {
+    "children": Object {
+      "2": Node {
+        "children": Object {
+          "2": Node {
+            "children": Object {},
+            "words": Array [
+              "ab",
+            ],
+          },
+        },
+        "words": Array [],
+      },
+      "3": Node {
+        "children": Object {
+          "3": Node {
+            "children": Object {},
+            "words": Array [
+              "de",
+            ],
+          },
+        },
+        "words": Array [],
+      },
+    },
+    "words": Array [],
+  },
+}
+`;
+
+exports[`Trie should initialize correctly 1`] = `
+Trie {
+  "root": Node {
+    "children": Object {},
+    "words": Array [],
+  },
+}
+`;

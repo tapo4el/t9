@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input enhancer should render correctly 1`] = `
+<ul
+  className="suggestions"
+>
+  <li
+    onClick={[Function]}
+  >
+    Hello
+  </li>
+  <li
+    onClick={[Function]}
+  >
+    world
+  </li>
+</ul>
+`;

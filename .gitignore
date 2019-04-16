@@ -4,3 +4,4 @@ package-lock.json
 yarn.lock
 /public/bundle.js
 /public/bundle.css
+/coverage
