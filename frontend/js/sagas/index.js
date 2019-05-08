@@ -6,4 +6,4 @@ export default function* sagas() {
     yield all([
         suggestions(),
     ]);
-};
+}

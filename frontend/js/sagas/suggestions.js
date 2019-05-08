@@ -1,11 +1,11 @@
-import { throttle, put, select, call } from 'redux-saga/effects';
-import { fetch } from 'whatwg-fetch';
+import {
+    throttle, put, select, call,
+} from 'redux-saga/effects';
 
 import { addSymbol, removeSymbol, suggestionsReceived } from '../actions';
 import { getMaskNumbers } from '../selectors';
 
 export function* handleSuggestion() {
-
     const mask = yield select(getMaskNumbers);
     const response = yield call(fetch, `/suggestions?mask=${mask}`);
     const payload = yield call([response, response.json]);

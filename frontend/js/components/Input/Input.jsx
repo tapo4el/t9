@@ -8,12 +8,12 @@ class Input extends React.PureComponent {
         inputText: string.isRequired,
     };
 
-   render() {
-       const { inputText } = this.props;
-       return (
-           <input type="text" className="textInput" value={inputText} readOnly/>
-       );
-   }
-};
+    render() {
+        const { inputText } = this.props;
+        return (
+            <input type="text" className="textInput" value={inputText} readOnly />
+        );
+    }
+}
 
 export default Input;

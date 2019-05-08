@@ -10,10 +10,10 @@ class Button extends React.PureComponent {
         onClickHandler: func.isRequired,
     };
 
-    render () {
+    render() {
         const { text, value, onClickHandler } = this.props;
         return (
-            <button className="button" onClick={() => onClickHandler(value)}>
+            <button type="button" className="button" onClick={() => onClickHandler(value)}>
                 {value}
                 <div>{text}</div>
             </button>

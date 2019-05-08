@@ -7,5 +7,5 @@ import suggestions from './suggestions';
 export default combineReducers({
     predictionMask,
     inputText,
-    suggestions
+    suggestions,
 });

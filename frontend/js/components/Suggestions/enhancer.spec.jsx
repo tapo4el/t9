@@ -12,16 +12,16 @@ describe('Input enhancer', () => {
     };
     const mockStore = configureStore();
     const store = mockStore(initialState);
-    const wrapper = mount(<Provider store={store}><Suggestions/></Provider>);
+    const wrapper = mount(<Provider store={store}><Suggestions /></Provider>);
 
-    it ('should render correctly', () => {
+    it('should render correctly', () => {
         const component = renderer.create(
-            <Suggestions store={store}/>
+            <Suggestions store={store} />,
         );
         expect(component.toJSON()).toMatchSnapshot();
     });
 
-    it ('addWord should work correctly', () => {
+    it('addWord should work correctly', () => {
         wrapper.find('li').at(0).simulate('click');
         const actions = store.getActions();
 
