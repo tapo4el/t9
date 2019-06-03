@@ -19,6 +19,15 @@ yarn test
 yarn test --coverage
 ```
 
+## Used technologies
+- created simple Trie algorithm
+- React, Redux, redux-actions, reselect, redux-saga
+- Jest, Enzyme
+- Babel
+- Eslint
+- Webpack
+- NodeJS, express.js
+
 ## Some further improvements: :fire:
 
 - Handling suggestions loading (show some spinner)

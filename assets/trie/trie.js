@@ -6,7 +6,7 @@ const keyMap = {
     m: 6, n: 6, o: 6,
     p: 7, q: 7, r: 7, s: 7,
     t: 8, u: 8, v: 8,
-    w: 9, x: 9, y: 9, z: 9
+    w: 9, x: 9, y: 9, z: 9,
 };
 
 class Node {
@@ -20,10 +20,11 @@ class Trie {
     constructor() {
         this.root = new Node();
     }
+
     insert(word) {
         let node = this.root;
         const normalized = word.toLowerCase();
-        for(let i= 0; i < word.length; i++){
+        for (let i = 0; i < word.length; i += 1) {
             const key = keyMap[normalized[i]];
             if (!node.children.hasOwnProperty(key)) {
                 node.children[key] = new Node();
@@ -32,12 +33,13 @@ class Trie {
         }
         node.words.push(normalized);
     }
+
     getSuggestions(str) {
         let node = this.root;
         let hasMatches = false;
-        for (let i = 0; i < str.length; i++) {
-            let key = str[i];
-            if (node.children.hasOwnProperty(key)){
+        for (let i = 0; i < str.length; i += 1) {
+            const key = str[i];
+            if (node.children.hasOwnProperty(key)) {
                 node = node.children[key];
                 hasMatches = true;
             } else {
@@ -46,18 +48,19 @@ class Trie {
             }
         }
 
-        return hasMatches ? this.fillSuggestions(node): [];
+        return hasMatches ? this.fillSuggestions(node) : [];
     }
+
     fillSuggestions(node) {
         let result = node.words;
-        let queue = [];
+        const queue = [];
 
-        for (let child in node.children) queue.push(node.children[child]);
+        for (const child in node.children) queue.push(node.children[child]);
 
         while (result.length < 10 && queue.length > 0) {
-            node = queue.shift();
-            for (let child in node.children) queue.push(node.children[child]);
-            result = result.concat(node.words);
+            const newNode = queue.shift();
+            for (const child in newNode.children) queue.push(newNode.children[child]);
+            result = result.concat(newNode.words);
         }
         return result;
     }
