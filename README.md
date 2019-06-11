@@ -1,6 +1,8 @@
 # T9 MVP
 This MVP version of T9 feature. Enjoy :smile:
 ## How to use 
+Deployed on Heroku: https://t9app.herokuapp.com/
+
 ```
 yarn install
 yarn build
